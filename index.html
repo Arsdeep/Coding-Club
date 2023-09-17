@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club</title>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> <!--email sending file-->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="load/34-code.gif" type="image/x-icon">
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-63XN6BBCQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63XN6BBCQP');
+</script>
+
+
+</head>
+<body>
+  
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  
+
+  <img src="load/34-code.gif" id="loadinggif">  <!--loading gif-->
+
+  <div id="load"></div> <!--loading animtion-->
+
+  <header id="header">
+    <img src="load/34-code.gif" id="gtx"> <!--header image-->
+    <h1>Coding Club</h1>  <!--heading-->
+  </header>
+<div id="whytojoin"><a href="whytojoin.html">Why you should join</a></div> <!--why to join-->
+  <div class="main" id="main">
+    
+    <form action="" method="dialog"> <!--the form-->
+      <label for="name">Full  Name</label>
+      <input type="text"  name="name" placeholder="Your Name" required id="name">
+      <label for="kid">KID</label>
+      <input type="text"  name="kid" placeholder="K000000" required id="kid">
+      <label for="email">Email Address</label>
+      <input type="email" name="email" placeholder="Someone@gmail.com" required id="email">
+      <label for="no">Phone No</label>
+      <input type="tel"  name="no" placeholder="+91-XXXXXXXXXX"  required id="no">
+        <label for="course">Course</label>
+        <select required id="course">
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="B.Tech">B.tech</option>
+            <option value="B.Tech">BBA</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="semester">Semester</label>
+        <select required id="semester">
+          <option value="I">I</option>
+          <option value="II">II</option>
+          <option value="III">III</option>
+          <option value="IV">IV</option>
+          <option value="V">V</option>
+          <option value="VI">VI</option>
+      </select>
+      <label for="skill">Skill Level</label>
+      <select required id="skill">
+        <option value="beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Intermediate">Professional</option>
+    </select><br>
+      <label for="extra">What's your purpose of joining</label>
+      <textarea  type="text" name = "description" placeholder="(Optional)" rows = "5" cols = "60"  id="extra">
+      </textarea><br>
+        <button type="submit" id="submit">Join</button>
+    </form>
+   
+  </div>
+ 
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+<!--code by babyo7_-->
