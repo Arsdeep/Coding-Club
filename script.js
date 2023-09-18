@@ -69,6 +69,20 @@ submit.onclick = async () => {
 
     // checking for blank and blank spaces
 
+    if(kidId[0].toLowerCase() != "k" || kidId.length != 6)
+    {
+        alert("KID Number Invalid")
+        kid.focus();
+        return;
+    }
+
+    if(phoneNo.length != 10)
+    {
+        alert("Phone Number Invalid")
+        no.focus();
+        return;
+    }
+    
     if (
         !fullName.trim() ||
         !kidId.trim() ||
@@ -78,7 +92,6 @@ submit.onclick = async () => {
         !userSemester.trim() ||
         !userskill.trim()
     ) {
-       alert("Please Fill The Blank")
         return; 
     }
     // sending form data to

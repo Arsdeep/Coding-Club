@@ -43,16 +43,16 @@
       <label for="name">Full  Name</label>
       <input type="text"  name="name" placeholder="Your Name" required id="name">
       <label for="kid">KID</label>
-      <input type="text"  name="kid" placeholder="K000000" required id="kid">
+      <input type="text"  name="kid" placeholder="K000000" required id="kid" maxlength="6">
       <label for="email">Email Address</label>
       <input type="email" name="email" placeholder="Someone@gmail.com" required id="email">
       <label for="no">Phone No</label>
-      <input type="tel"  name="no" placeholder="+91-XXXXXXXXXX"  required id="no">
+      <input type="tel"  name="no" placeholder="XXXXXXXXXX"  required id="no" maxlength="10">
         <label for="course">Course</label>
         <select required id="course">
             <option value="BCA">BCA</option>
             <option value="MCA">MCA</option>
-            <option value="B.Tech">B.tech</option>
+            <option value="B.Tech">B.Tech</option>
             <option value="B.Tech">BBA</option>
             <option value="Other">Other</option>
         </select>
@@ -69,11 +69,10 @@
       <select required id="skill">
         <option value="beginner">Beginner</option>
         <option value="Intermediate">Intermediate</option>
-        <option value="Intermediate">Professional</option>
-    </select><br>
+        <option value="Intermediate">Pro</option>
+    </select>
       <label for="extra">What's your purpose of joining</label>
-      <textarea  type="text" name = "description" placeholder="(Optional)" rows = "5" cols = "60"  id="extra">
-      </textarea><br>
+      <textarea  type="text" name = "description" placeholder="(Optional)" rows = "5" cols = "60"  id="extra"></textarea>
         <button type="submit" id="submit">Join</button>
     </form>
    
